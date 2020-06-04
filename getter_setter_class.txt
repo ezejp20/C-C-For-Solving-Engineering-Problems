@@ -1,0 +1,54 @@
+#include
+<iostream>
+#include
+<string>
+using
+namespace
+std;
+class
+Prompter
+{
+public
+:
+void
+setMessage
+(
+string
+str){
+message
+=str;
+}
+string
+getMessage
+(){
+return
+message
+;}
+void
+displayMessage
+(){ cout<<
+"Message: "
+<<
+message
+<<endl;
+}
+private
+:
+string
+message
+;
+};
+int
+main
+() {
+Prompter
+p;
+string
+input;
+cout<<
+"Input your message:"
+;getline(cin,input);
+p.setMessage(input);p.displayMessage();
+return
+0;
+}

@@ -1,0 +1,46 @@
+Simple example for classes in C++
+#include
+<iostream>
+#include
+<string>
+using
+namespace
+std;
+class
+Prompter
+{
+public
+:
+string
+message
+;
+void
+readMessage
+(){
+cout<<
+"Input your message"
+<<endl;
+getline(cin,
+message
+);
+}
+void
+displayMessage
+(){
+cout<<
+"Message: "
+<<
+message
+<<endl;
+}
+};
+//!! don't forget a ';' here
+int
+main
+() {
+Prompter
+p;
+p.readMessage();p.displayMessage();
+return
+0;
+}
